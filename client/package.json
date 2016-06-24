@@ -1,0 +1,12 @@
+{
+  "name": "SDCsite",
+  "version": "0.0.1",
+  "author": "Vaughn Kottler",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-animate": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "angular-ui-bootstrap": "^1.0.0",
+    "bootstrap": "^3.3.6"
+  }
+}
