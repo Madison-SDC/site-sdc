@@ -32,10 +32,20 @@ Members: Ellery Kreloff, Vaughn Kottler
 
 **Install Node.js (4.4.6 LTS):** https://nodejs.org/en/
 
-**Pull the repository:** Install git, create a new folder, open terminal at that folder,  
+**Pull the repository:**
+
+Install git, create a new folder, open terminal at that folder,  
 run `git init` and then `git remote add origin https://github.com/Madison-SDC/site-sdc.git`  
 then run `git pull origin master`. First you will need collaborator access to this repository,  
 contact Ellery Kreloff for that.
 
-**Run the server:** Still inside the repository directory in your terminal, type  
+**Install dependencies:**
+
+Since we are not including dependency sources files in the repository, you will need to retrive them using  
+`npm install`. Once each, go in to the client and server directory and run `npm install`. **If you don't do  
+that first this won't work!**
+
+**Run the server:**
+
+Still inside the repository directory in your terminal, type  
 `node server`. Now go to your browser and visit http://localhost:8080 and you will see the site!
