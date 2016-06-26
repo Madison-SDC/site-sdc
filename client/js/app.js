@@ -6,8 +6,8 @@ angular.module('sdc', [
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'modules/main/templates/main.html',
-    //controller: 'mainController',
-    //controllerAs: 'main'
+    templateUrl: 'templates/main.html',
+    controller: 'mainController',                     // controllers/main.js
+    controllerAs: 'main'
   });
 });
