@@ -1,6 +1,6 @@
 # Our Website
 
-Members: Ellery Kreloff, Vaughn Kottler
+Members: Ellery Kreloff, Vaughn Kottler, Jonathan Erbe
 
 ## Technologies
 
