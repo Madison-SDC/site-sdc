@@ -13,6 +13,26 @@
     position: relative;
     overflow: hidden;
 }
+
+.section{
+    outline: 2px;
+    outline-color: black;
+}
+
+.container{
+    line-height: 800px;
+    width: 100%;
+}
+
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
 .hvr-underline-from-center:before {
     content: "";
     position: absolute;
