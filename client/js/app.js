@@ -1,7 +1,7 @@
 angular.module('sdc', [
   'ngRoute',
   'ui.bootstrap',
-  'ngAnimate'
+  'directives'
 ])
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
