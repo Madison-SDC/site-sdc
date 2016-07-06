@@ -4,7 +4,8 @@
   "main": "server.js",
   "author": "Vaughn Kottler",
   "dependencies": {
+    "body-parser": "^1.10.0",
     "express": "^4.13.4",
-    "body-parser": "^1.10.0"
+    "hover.css": "^2.0.2"
   }
 }

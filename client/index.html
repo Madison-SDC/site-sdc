@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="sdc">
 <head>
-  <title>Welcome to SDC</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <title>Welcome to SDC</title>
 
-  <!-- Our Styling -->
+  <link href="css/hover.css" rel="stylesheet" media="all">
   <link rel="stylesheet" href="styles/main.css">
+
 
   <base href='/'>
 </head>
 <body>
 
+<<<<<<< HEAD
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header center">
+      <a class="navbar-brand" href="#">UW-Madison's Software Development Club</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="hvr-underline-from-center"><a href="#">Home</a></li>
+      <!-- update hrefs here -->
+      <li><a href="#section-i">Page 1</a></li>
+      <li><a href="#section-ii">Page 2</a></li>
+      <li><a href="#section-iii">Page 3</a></li>
+      <li><a href="#section-iv">Page 4</a></li>
+    </ul>
+  </div>
+</nav>
+<body id='body'>
+    <!-- feel free to change these values, just remember to update
+     the href value in the corresponding section above -->
+     <div class="container">
+      <div id="section-i" class="section"> Section 1 </div>
+
+      <div id="section-ii" class="section"> Section 2</div>
+
+      <div id="section-iii" class="section"> Section 3</div>
+
+      <div id="section-iv" class="section"> Section 4 </div>
+    </div>
+
+=======
   <topnav></topnav>
+>>>>>>> 2fae0a3ff354c75e11d2879df7925a8801809869
 
-  <h1>Hello, world!</h1>
+  <div ng-view>
 
-  <div ng-view></div>
+  </div>
 
 <div><center>Created and Maintained by the Software Development Club</center></div>
 
@@ -29,6 +61,8 @@
 <script src="node_modules/angular-route/angular-route.js"></script>
 
 <!-- Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
 
 <!-- Apps -->
