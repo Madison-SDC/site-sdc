@@ -5,6 +5,8 @@ angular.module('sdc')
 
 
 //Scrolling code below
+// you can't do jquery and bootstrap
+/*
 $('a[href^="#"]').on('click', function(event) {
 
     var target = $(this.getAttribute('href'));
@@ -15,5 +17,5 @@ $('a[href^="#"]').on('click', function(event) {
             scrollTop: target.offset().top
         }, 1000);
     }
-
 });
+*/
