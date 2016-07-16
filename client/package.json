@@ -5,8 +5,6 @@
   "dependencies": {
     "angular": "^1.5.6",
     "angular-route": "^1.5.6",
-    "angular-ui-bootstrap": "^1.0.0",
-    "bootstrap": "^3.3.6",
     "hover.css": "^2.0.2"
   }
 }
