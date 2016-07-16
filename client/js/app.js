@@ -1,6 +1,5 @@
 angular.module('sdc', [
   'ngRoute',
-  'ui.bootstrap',
   'directives'
 ])
 .config(function($routeProvider, $locationProvider) {
