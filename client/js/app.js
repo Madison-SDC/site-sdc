@@ -1,5 +1,8 @@
 angular.module('sdc', [
   'ngRoute',
+  'ngMaterial',
+  'ngAnimate',
+  'ngAria',
   'directives'
 ])
 .config(function($routeProvider, $locationProvider) {
@@ -10,6 +13,3 @@ angular.module('sdc', [
     controllerAs: 'main'
   });
 });
-
-
-
