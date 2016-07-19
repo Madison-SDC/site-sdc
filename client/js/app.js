@@ -5,6 +5,7 @@ angular.module('sdc', [
   'ngAria',
   'directives'
 ])
+
 .config(function($routeProvider, $locationProvider) {
   $routeProvider
   .when('/', {
@@ -13,3 +14,10 @@ angular.module('sdc', [
     controllerAs: 'main'
   });
 });
+
+angular.module('sdcApp', ['ngMaterial'])
+    .config(function($mdThemingProvider) {
+      $mdThemingProvider.theme('default')
+          .primaryPalette('black')
+          .accentPalette('green');
+    });
