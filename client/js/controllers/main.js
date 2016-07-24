@@ -1,16 +1,5 @@
 angular.module('sdc')
 
 .controller("mainController", function($scope, $http) {
+  $scope.currentNavItem = 'page1';
 });
-
-
-(function() {
-    'use strict';
-    angular.module('navBarDemoBasicUsage', ['ngMaterial'])
-        .controller('AppCtrl', AppCtrl);
-    function AppCtrl($scope) {
-        $scope.currentNavItem = 'page1';
-    }
-})();
-
-

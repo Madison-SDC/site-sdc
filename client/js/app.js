@@ -6,7 +6,12 @@ angular.module('sdc', [
   'directives'
 ])
 
-.config(function($routeProvider, $locationProvider) {
+.config(function($routeProvider, $locationProvider, $mdThemingProvider) {
+
+  $mdThemingProvider.theme('default')
+      .primaryPalette('grey')
+      .accentPalette('green');
+
   $routeProvider
   .when('/', {
     templateUrl: 'templates/main.html',
@@ -14,10 +19,3 @@ angular.module('sdc', [
     controllerAs: 'main'
   });
 });
-
-angular.module('sdcApp', ['ngMaterial'])
-    .config(function($mdThemingProvider) {
-      $mdThemingProvider.theme('default')
-          .primaryPalette('black')
-          .accentPalette('green');
-    });
