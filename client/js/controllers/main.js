@@ -1,5 +1,5 @@
 angular.module('sdc')
 
 .controller("mainController", function($scope, $http) {
-  $scope.currentNavItem = 'page1';
+  $scope.welcome = "Hello! Angular test.";
 });
