@@ -9,8 +9,8 @@ angular.module('sdc', [
 .config(function($routeProvider, $locationProvider, $mdThemingProvider) {
 
   $mdThemingProvider.theme('default')
-      .primaryPalette('grey')
-      .accentPalette('green');
+      .primaryPalette('green')
+      .accentPalette('grey');
 
   $routeProvider
   .when('/', {
