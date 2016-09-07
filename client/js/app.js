@@ -6,7 +6,7 @@ angular.module('sdc', [
   'directives'
 ])
 
-.config(function($routeProvider, $locationProvider, $mdThemingProvider) {
+.config(function($routeProvider, $mdThemingProvider) {
 
   $mdThemingProvider.theme('default')
       .primaryPalette('green')
@@ -17,5 +17,5 @@ angular.module('sdc', [
   .when('/calender', { templateUrl: 'views/calender.html' })
   .when('/projects', { templateUrl: 'views/projects.html' })
   .otherwise({ redirectTo: '/' });
-  
+
 });
