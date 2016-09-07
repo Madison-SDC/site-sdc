@@ -19,3 +19,6 @@ angular.module('sdc', [
     controllerAs: 'main'
   });
 });
+
+/* Controllers for schedule */
+

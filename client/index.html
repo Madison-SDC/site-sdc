@@ -15,9 +15,45 @@
 </head>
 
 <body>
+
   <topnav></topnav>
-  <div ng-view></div>
-  <div><center>Created and Maintained by the Software Development Club</center></div>
+
+  <!-- Schedule -->
+  <div ng-controller="ScheduleCtrl" ng-cloak="" class="tabsStaticTabs scheduleContainer" ng-app="MyApp">
+    <md-content class="md-padding">
+      <!-- height section below -->
+      <div ng-controller="tabGen as tab">
+      <md-tabs class="md-accent" md-selected="data.selectedIndex" md-align-tabs="{{data.bottom ? 'bottom' : 'top'}}">
+        <md-tab ng-repeat ="month in tab.tabs">
+          <md-tab-label>{{month.month}}</md-tab-label>
+          <md-tab-body>
+            <!-- days of the week start -->
+            <div layout="row" ng-controller="daysOfWeek as dow">
+              <div ng-repeat="days in dow.getDays" flex class="dayofweek">{{days.day}}</div>
+            </div>
+            <!-- day of week end  -->
+            <div ng-controller="gridListCtrl as vm" flex ng-cloak>
+              <md-grid-list
+                      md-cols="7"
+                      md-row-height-gt-md="1:1" md-row-height="4:3"
+                      md-gutter="20px" md-gutter-gt-sm="8px" >
+                <md-grid-tile ng-repeat="tile in vm.tiles"
+                              md-rowspan="{{tile.span.row}}"
+                              md-colspan="{{tile.span.col}}"
+                              md-colspan-sm="1"
+                              md-colspan-xs="1"
+                              ng-class="tile.background" >
+                    <h3 class = "infoText">{{tile.info}}</h3>
+                  <md-grid-tile-footer ng-class="tile.footer"><h3>{{tile.title}}</h3></md-grid-tile-footer>
+                </md-grid-tile>
+              </md-grid-list>
+            </div>
+          </md-tab-body>
+        </md-tab>
+      </md-tabs>
+      </div>
+    </md-content>
+  </div>
 </body>
 
 <!-- Angular: base, route, animate, route, material -->
@@ -27,11 +63,17 @@
 <script src="node_modules/angular-aria/angular-aria.min.js"></script>
 <script src="node_modules/angular-material/angular-material.min.js"></script>
 
-<!-- Apps -->
 <script src="js/app.js"></script>
 
+<!-- Services -->
+<script src="js/services/calenderItems.js"></script>
+<script src="js/services/dataInit.js"></script>
+
 <!-- Controllers -->
-<script src="js/controllers/main.js"></script>
+<script src="js/controllers/daysOfWeek.js"></script>
+<script src="js/controllers/gridList.js"></script>
+<script src="js/controllers/schedule.js"></script>
+<script src="js/controllers/tabGen.js"></script>
 
 <!-- Other -->
 <script src="js/directives.js"></script>
