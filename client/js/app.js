@@ -13,12 +13,9 @@ angular.module('sdc', [
       .accentPalette('grey');
 
   $routeProvider
-  .when('/', {
-    templateUrl: 'templates/main.html',
-    controller: 'mainController',                     // controllers/main.js
-    controllerAs: 'main'
-  });
+  .when('/', { redirectTo: '/calender' })
+  .when('/calender', { templateUrl: 'views/calender.html' })
+  .when('/projects', { templateUrl: 'views/projects.html' })
+  .otherwise({ redirectTo: '/' });
+  
 });
-
-/* Controllers for schedule */
-

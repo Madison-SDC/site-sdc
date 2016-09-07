@@ -4,6 +4,7 @@ angular.module('directives', [])
 .directive('topnav', function() {
   return {
     restrict: 'E',
-    templateUrl: 'templates/topnav.html'
+    templateUrl: 'templates/topnav.html',
+    controller: 'navController'
   }
 });
