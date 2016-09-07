@@ -1,4 +1,4 @@
-angular.module('sdc')
+angular.module('sdcControllers')
 
 /* days of the week -- works */
 .controller('daysOfWeek', function($scope){

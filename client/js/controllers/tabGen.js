@@ -1,4 +1,4 @@
-angular.module('sdc')
+angular.module('sdcControllers')
 
 .controller('tabGen', function($scope, dataInit) {
     this.tabs = getTabsToGenerate({

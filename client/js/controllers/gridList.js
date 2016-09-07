@@ -1,4 +1,4 @@
-angular.module('sdc')
+angular.module('sdcControllers')
 
 /* dynamic tile generation for calendar days -- WIP */
 .controller('gridListCtrl', function($scope, dataInit, calendarItems) {

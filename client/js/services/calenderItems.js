@@ -1,4 +1,6 @@
-angular.module('sdc').factory('calendarItems', function calendarItems(){
+angular.module('sdcServices')
+
+.factory('calendarItems', function() {
     var data = [];
 
     data.push({month: "September", 6: "classes begin", 14: "student org fair", 15: "student org fair",

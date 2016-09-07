@@ -1,6 +1,6 @@
-angular.module('sdc')
+angular.module('sdcServices')
 
-.factory('dataInit', function dataInit(){
+.factory('dataInit', function() {
     var counter = 0;
     var data = [];
 

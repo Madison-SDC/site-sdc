@@ -1,4 +1,4 @@
-angular.module('sdc')
+angular.module('sdcControllers')
 
 .controller('ScheduleCtrl', function($scope) {
     $scope.data = {

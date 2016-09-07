@@ -1,9 +1,13 @@
+angular.module('sdcServices', []);
+angular.module('sdcControllers', ['sdcServices']);
+
 angular.module('sdc', [
   'ngRoute',
   'ngMaterial',
   'ngAnimate',
   'ngAria',
-  'directives'
+  'directives',
+  'sdcControllers'
 ])
 
 .config(function($routeProvider, $mdThemingProvider) {
