@@ -2,9 +2,12 @@ angular.module('sdcControllers')
 
 /* dynamic tile generation for calendar days -- WIP */
 .controller('gridListCtrl', function($scope, dataInit, calendarItems) {
-    var days = dataInit.getDays(dataInit.getCounter());
-    var blankDays = dataInit.getblankDays(dataInit.getCounter());
-    var month = dataInit.getCounter();
+
+    dataInit.counter = 0;
+
+    var days = dataInit.getDays(dataInit.counter);
+    var blankDays = dataInit.getblankDays(dataInit.counter);
+    var month = dataInit.counter;
     this.tiles = buildGridModel({
         background: "",
         footer: "",
