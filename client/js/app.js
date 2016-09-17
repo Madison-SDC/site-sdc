@@ -18,7 +18,10 @@ angular.module('sdc', [
 
   $routeProvider
   .when('/', { redirectTo: '/calender' })
-  .when('/calender', { templateUrl: 'views/calender.html' })
+  .when('/calender', { 
+    templateUrl: 'views/calender.html',
+    controller: 'ScheduleCtrl'
+  })
   .when('/projects', { templateUrl: 'views/projects.html' })
   .otherwise({ redirectTo: '/' });
 
