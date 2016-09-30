@@ -37,3 +37,42 @@
 	font-size: 0.5em;
 	margin-top: -20px;
 }
+
+#content-info {
+	text-align: justify;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: white;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+#content-info div{
+	padding-bottom: 15px;
+}
+
+#content-info h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 2.25em;
+}
+
+#content-info p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.0em;
+}
+
+#footer{
+	background-color: #0d344b;
+}
+
+#footer p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 1.0em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	color: white;
+}
