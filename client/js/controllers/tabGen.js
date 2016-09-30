@@ -13,7 +13,7 @@ angular.module('sdcControllers')
             month = dataInit.getMonth(dataInit.counter);
             it.month = month;
             result.push(it);
-            dataInit.updateCounter();
+            dataInit.counter++;
         }
         dataInit.resetCounter();
         return result;
