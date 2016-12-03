@@ -40,15 +40,13 @@
 
 #content-info {
 	text-align: justify;
-	padding-top: 15px;
-	padding-bottom: 15px;
 	background-color: white;
-	padding-left: 35px;
-	padding-right: 35px;
+	text-align: center;
+	padding: 2% 0% 2% 0%;
 }
 
 #content-info div{
-	padding-bottom: 15px;
+	padding-bottom: 1%;
 }
 
 #content-info h2 {
@@ -61,6 +59,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-size: 1.0em;
+	margin-left:15%;
+	margin-right:15%;
+	margin-top: 1%;
 }
 
 #footer{
@@ -75,4 +76,8 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	color: white;
+}
+
+#banner-row {
+	margin: auto;
 }

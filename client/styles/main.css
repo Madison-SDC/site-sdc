@@ -1,5 +1,23 @@
 /* For our own custom styles */
 
+#quote {
+    padding-top: 1%;
+    margin-bottom: .5%;
+}
+
+.sponsor {
+    width: 400px;
+    height: 400px;
+}
+
+.sponsor-tier {
+    margin-left: 5%;
+}
+
+.photo {
+    margin-left: 5%;
+}
+
 /* Projects page top row paddding*/
 #row-top {
     padding: 0% 0% 1% 0%;

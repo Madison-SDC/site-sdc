@@ -23,6 +23,7 @@ angular.module('sdc', [
     controller: 'ScheduleCtrl'
   })
   .when('/projects', { templateUrl: 'views/projects.html' })
+  .when('/sponsors', { templateUrl: 'views/sponsors.html' })
   .otherwise({ redirectTo: '/' });
 
 });
