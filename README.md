@@ -1,12 +1,10 @@
 # Our Website
 
-Members: Ellery Kreloff, Vaughn Kottler, Jonathan Erbe
+Members: Ellery Kreloff, Arup Arcalgud, Kevin Cj Bannerman, Jonathan Erbe, Aman Lunia, Ruiqi Yin, Paul Kurians
 
 ## Technologies
 
 1. **Angular JS 1.5.x**
-
-   Eventually we will discuss the way we use Angular here.
 
 2. **Node.js 4.2.6**
   * Express, body-parser
